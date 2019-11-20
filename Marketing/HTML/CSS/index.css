@@ -63,21 +63,6 @@ h1, h2, h3, h4, h5 {
 /* My code Starts here */
 
 html {
- 
-    /* height: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background: #80bg32;
-    background-repeat: no;
-    background: -webkit-linear-gradient( to left top, white, #BD2031);
-    background: -moz-linear-gradient( to left top, white, #BD2031);
-    background: -ms-linear-gradient( to left top, white, red);
-    background: -o-linear-gradient( to left top, red, white);
-    background: linear-gradient( to left top, white, red);
-    animation: gradientBG 15s ease infinite; */
-
 background: linear-gradient(-45deg, #BD2031, white, #f3e2dd, #BD2031);
 background-size: 400% 400%;
 animation: gradientBG 15s ease infinite;
@@ -98,6 +83,7 @@ animation: gradientBG 15s ease infinite;
 .navigation{
     text-align: center;
     padding: 20px;
+    font-weight: bold;
 }
 
 a{
