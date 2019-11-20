@@ -130,7 +130,7 @@ border-radius: 50%;
 }
 
 .fillerPicture{
-    display: flex;
+display: flex;
 justify-content: space-evenly;
 margin-top: 25px;
 }
