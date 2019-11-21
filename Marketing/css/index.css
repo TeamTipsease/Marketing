@@ -25,7 +25,7 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 10%;
   color: #056608;
 }
@@ -34,6 +34,7 @@
   margin-bottom: 10%;
   padding: 2px;
   box-shadow: 0 8px 6px -6px #9CA89C;
+  margin-left: 70px;
 }
 .cardIcon {
   margin-bottom: 10px;
@@ -48,10 +49,9 @@
 }
 footer {
   width: 100%;
-  background: #8d3533;
   border-top: 1px dashed white;
   margin: 10px;
-  color: black;
+  color: #056608;
   text-decoration: none;
   /*======= Create a selector for the anchor tag in the footer to have the following styles:*/
   /* /*======= Create a hover state for the anchor tag in the footer nav to have the following styles: */
@@ -65,9 +65,12 @@ footer footer nav {
   margin-left: 1px;
   text-decoration: none;
 }
+footer a {
+  color: #056608;
+}
 footer .footer-content a:hover {
   text-decoration: line-through;
-  color: white;
+  color: #9CA89C;
 }
 footer .footer-content a:hover footer .footer-content .copyright {
   padding: 20px 0;
@@ -76,7 +79,7 @@ footer .footer-content a:hover footer .footer-content .copyright {
 }
 .navFeatures {
   text-decoration: line-through;
-  color: white;
+  color: #9CA89C;
 }
 .boxFeatures {
   box-shadow: 0 8px 6px -6px black;
@@ -85,20 +88,20 @@ footer .footer-content a:hover footer .footer-content .copyright {
   text-align: center;
   padding: 20px;
   font-weight: bold;
-  border-bottom: d 2px black;
   box-shadow: 0 8px 6px -6px #9CA89C;
+}
+.navigation .Tipsease {
+  margin-top: 10px;
+  color: #056608;
 }
 .navigation a {
   text-decoration: none;
-  color: #BD2031;
+  color: #056608;
+  display: inline;
 }
 .navigation a:hover {
   text-decoration: line-through;
-  color: white;
-}
-.navigation .button {
-  display: flexbox;
-  margin-left: 40%;
+  color: #9CA89C;
 }
 html,
 body,
