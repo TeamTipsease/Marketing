@@ -62,6 +62,18 @@ img {
     margin-top: 30px;
   }
 }
+@media (max-width: 800px) {
+  .Item {
+    display: flexbox;
+    flex-direction: column;
+  }
+  .Item img {
+    text-align: center;
+  }
+  .Item button {
+    margin-top: 30px;
+  }
+}
 footer {
   width: 100%;
   border-top: 1px dashed white;
@@ -287,7 +299,7 @@ h5 {
 .missionStatment {
   display: flex;
   justify-content: space-evenly;
-  padding: 90px;
+  padding: 80px;
   box-shadow: 0 8px 6px -6px #9CA89C;
 }
 .missionStatment h1 {
@@ -304,7 +316,7 @@ h5 {
   margin-left: 10px;
 }
 .TeamTipsease {
-  color: 056608;
+  color: #056608;
   text-align: center;
   margin-top: 200px;
 }
@@ -314,13 +326,21 @@ h5 {
     flex-direction: column;
   }
   .missionStatment img {
-    width: 350px;
-    text-align: center;
+    width: 200%;
+  }
+}
+@media (max-width: 800px) {
+  .missionStatment {
+    display: flexbox;
+    flex-direction: column;
+  }
+  .missionStatment img {
+    width: 0 auto;
   }
 }
 @media (max-width: 1280px) {
   .missionStatment img {
-    width: 600px;
+    width: 640px;
     height: 445px;
   }
 }

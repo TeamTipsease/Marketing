@@ -6,6 +6,7 @@
 @import 'navigation.less';
 @import 'reset.less';
 @import 'about.less';
+@import 'variable.less';
 
 
 
@@ -43,7 +44,7 @@
 .missionStatment{
   display: flex;
   justify-content: space-evenly;
-  padding: 90px;
+  padding: 80px;
   box-shadow: 0 8px 6px -6px #9CA89C;
 
     h1{
@@ -63,29 +64,40 @@
 }
 
   .TeamTipsease{
-    color:056608;
+    color: @colorVariable;
     text-align: center;
     margin-top: 200px;
     }
 
     @media (max-width: 500px){
-
       .missionStatment{
-        display: flexbox;
-        flex-direction: column;
-      
         img{
-          width: 350px;
-          text-align: center;
+          width: 200%;
         }
+        
+        .mediaQueryFeatures();
     }
   }
+
+
+  @media (max-width: 800px){
+    .missionStatment{
+      // display: flexbox;
+      // flex-direction: column;
+      .mediaQueryFeatures();
+
+      img{
+        width: 0 auto;
+      }
+  }
+  }
+
 
   @media (max-width: 1280px){
     .missionStatment{
       
     img{
-      width: 600px;
+      width: 640px;
       height: 445px;
     }
   }

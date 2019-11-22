@@ -36,7 +36,7 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         padding-top: 10%;
-        color: #056608;
+        color: @colorVariable;
     
     
     
@@ -63,7 +63,7 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        color: #056608;
+        color: @colorVariable;
         margin-top: 25px;
 
         
@@ -85,3 +85,17 @@
          }   
     }
     
+    @media (max-width: 800px){
+        .Item{
+            display: flexbox;
+            flex-direction: column;
+
+            img{
+                text-align: center;
+            }
+
+            button{
+                margin-top: 30px;
+            }
+        }
+    }
