@@ -38,6 +38,9 @@ img {
   border: 2px solid #e7e7e7;
   border-radius: 4px;
 }
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
 .cardIcon {
   margin-bottom: 10px;
 }
@@ -55,7 +58,8 @@ img {
     flex-direction: column;
   }
   .Item img {
-    width: 350px;
+    width: 450px;
+    height: 50px;
     text-align: center;
   }
   .Item button {
@@ -72,6 +76,12 @@ img {
   }
   .Item button {
     margin-top: 30px;
+  }
+}
+@media (max-width: 1280px) {
+  .Item img {
+    width: 540px;
+    height: 440px;
   }
 }
 footer {
@@ -320,13 +330,10 @@ h5 {
   text-align: center;
   margin-top: 200px;
 }
-@media (max-width: 500px) {
-  .missionStatment {
-    display: flexbox;
-    flex-direction: column;
-  }
+@media (max-width: 550px) {
   .missionStatment img {
-    width: 200%;
+    width: 445px;
+    height: 300px;
   }
 }
 @media (max-width: 800px) {
@@ -340,7 +347,10 @@ h5 {
 }
 @media (max-width: 1280px) {
   .missionStatment img {
-    width: 640px;
-    height: 445px;
+    width: 540px;
+    height: 440px;
+  }
+  .missionStatment p {
+    margin-bottom: 25%;
   }
 }
