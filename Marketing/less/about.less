@@ -1,0 +1,114 @@
+
+
+@import 'home-page.less';
+@import 'footer.less';
+@import 'mixins.less';
+@import 'navigation.less';
+@import 'reset.less';
+@import 'about.less';
+@import 'variable.less';
+
+
+
+
+.cards{
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  margin-bottom: 80px;
+  
+  
+  .container {
+      /* Add shadows to create the "card" effect */
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      margin: 20px;
+      display: grid;
+      border: 2px solid #e7e7e7;
+      border-radius: 4px;
+      padding: 500rem;
+    }
+    
+    /* On mouse-over, add a deeper shadow */
+    .container:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    
+    /* Add some padding inside the card container */
+    .container {
+      padding: 2px 16px;
+    }
+}
+
+.missionStatment{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 80px;
+  box-shadow: 0 8px 6px -6px #9CA89C;
+
+    h1{
+      display: flexbox;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-top: 20px ;
+    }
+    p{
+      margin: 15px;
+    }
+
+    img{
+      border-radius: 50px;
+      margin-left: 10px;
+    }
+}
+
+  .TeamTipsease{
+    color: @colorVariable;
+    text-align: center;
+    margin-top: 200px;
+    }
+
+    @media (max-width: 550px){
+      .missionStatment{
+        
+        img{
+      width: 445px;
+      height: 300px;
+      
+        }
+        
+      
+    }
+  }
+
+
+  @media (max-width: 800px){
+    .missionStatment{
+      // display: flexbox;
+      // flex-direction: column;
+      .mediaQueryFeatures();
+
+      img{
+        width: 0 auto;
+      }
+  }
+  }
+
+
+  @media (max-width: 1280px){
+    .missionStatment{
+      
+    img{
+      width: 540px;
+      height: 440px;
+    }
+    p{
+      margin-bottom: 25%;
+    }
+  }
+  }
+
+  
+  
+  
